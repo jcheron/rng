@@ -1,5 +1,6 @@
 <?php
 namespace controllers;
+
  use Ubiquity\utils\http\USession;
 
  /**
@@ -25,9 +26,12 @@ class RandomNumberGame extends ControllerBase{
 
 
 	public function propose(){
-		
 		$this->loadView('RandomNumberGame/propose.html');
-
+	}
+	
+	public function termine(){
+	    USession::terminate();
+	    $this->index();
 	}
 
 }
