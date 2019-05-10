@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="ui {{msgType}} icon message">
+	<i class="ui {{icon}} icon"></i>
+	<div class="content">
+		<div class="ui header">Résultat :</div>
+		<p>Vous avez proposé</p>
+		<h1>{{nbPropose}}</h1>
+		<p>{{msg}}</p>
+		
+	</div>
+</div>
+
+{% endblock %}
