@@ -8,6 +8,7 @@ namespace controllers;
 class RandomNumberGame extends ControllerBase{
     const SESSION_KEY="random";
     
+    
 	public function index(){
 	    if(USession::exists(self::SESSION_KEY)){
 	        $this->propose();
